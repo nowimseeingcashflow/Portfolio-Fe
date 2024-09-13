@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding : 15px;
+}
+
+.main {
+  position: relative;
+  width: 75%;
+  margin: auto;
+}
+.menu,
+.logo,
+.search {
+  float: left;
+}
+
+.round-box {
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: rgba(169, 169, 169, 0.216);
+  border-style: solid;
+  padding : 15px;
+}
+
+.intro-wrap{
+  box-sizing: border-box;
+  display: flex;
+}
+
+.intro{
+  flex: 1;
+  margin : 0.75%;
+  box-sizing: border-box;
+}
