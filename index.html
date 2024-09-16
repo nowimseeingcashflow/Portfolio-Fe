@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of KJM</title>
     <link rel="stylesheet" href="style-PF.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="menu">
-            <a href="#none"><img src="menu-icon.png" alt="메뉴 열기" width="30px" height="30px"></a>
+            <a href="#none"><img src="src/menu-icon.png" alt="메뉴 열기" width="30px" height="30px"></a>
             <nav class="gnb-menu">
                 <ul>
                     <li>
@@ -40,24 +41,25 @@
             </nav>
         </div>
         <div class="logo">
-            <a href="/"><img src="logo.png" alt="JM"></a>
+            <a href="/"><img src="src/logo.png" alt="JM"></a>
         </div>
         <div class="search">
-            <a href="#none"><img src="search-icon.png" alt="검색" width="30px" height="30px"></a>
+            <a href="#none"><img src="src/search-icon.png" alt="검색" width="30px" height="30px"></a>
             <form action="" class="search-form">
-                <input type="text" placeholder="입력하세요" id="search"></form>
+                <input type="text" placeholder="입력하세요" id="search">
                 <input type="button" value="검색">
+            </form>
         </div>
     </header>
     <main class="main">
         <section class="swiper-section">
             <div class="swiper">
                 <ul class="swiper-sliders">
-                    <li class="swiper-slide"><a href="/"><img src="happy-happy-happy-cat.gif" alt="해피해피"></a></li>
-                    <li class="swiper-slide"><a href="/"><img src="happy-happy-happy-cat.gif" alt="해피해피"></a></li>
-                    <li class="swiper-slide"><a href="/"><img src="happy-happy-happy-cat.gif" alt="해피해피"></a></li>
-                    <li class="swiper-slide"><a href="/"><img src="happy-happy-happy-cat.gif" alt="해피해피"></a></li>
-                    <li class="swiper-slide"><a href="/"><img src="happy-happy-happy-cat.gif" alt="해피해피"></a></li>
+                    <li class="swiper-slide"><a href="/"><img src="src/happy-happy-happy-cat.gif" alt="해피해피"></a></li>
+                    <li class="swiper-slide"><a href="/"><img src="src/happy-happy-happy-cat.gif" alt="해피해피"></a></li>
+                    <li class="swiper-slide"><a href="/"><img src="src/happy-happy-happy-cat.gif" alt="해피해피"></a></li>
+                    <li class="swiper-slide"><a href="/"><img src="src/happy-happy-happy-cat.gif" alt="해피해피"></a></li>
+                    <li class="swiper-slide"><a href="/"><img src="src/happy-happy-happy-cat.gif" alt="해피해피"></a></li>
                     <!-- <li class="swiper-slide"><a href="/"></a></li>
                     <li class="swiper-slide"><a href="/"></a></li>
                     <li class="swiper-slide"><a href="/"></a></li>
@@ -69,36 +71,42 @@
             <h1>자기소개</h1>
             <div class="round-box">
                 <h5>안녕하세요. 개발을 하고 있는 김지민입니다.</h5>
-                <img src="githubicon.png" alt="" height="15px" width="15px"><a href="https://github.com/nowimseeingcashflow">깃허브</a>
-                <img src="instaicon.png" alt="" height="15px" width="15px"><a href="https://instagram.com/gemini.aqr">인스타그램</a><br>
+                <img src="src/githubicon.png" alt="" height="15px" width="15px"><a href="https://github.com/nowimseeingcashflow">깃허브</a>
+                <img src="src/instaicon.png" alt="" height="15px" width="15px"><a href="https://instagram.com/gemini.aqr">인스타그램</a><br>
                 <div class="intro-wrap">    
                     <div class="intro round-box">
                         <h2>Front-End</h2>
                         <ul>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>PUG</li>
-                            <li>React</li>
+                            <li class="intro-li"><img src="src/HTML.svg" alt="html"></li>
+                            <li class="intro-li"><img src="src/CSS.svg" alt="css"></li>
+                            <li class="intro-li"><img src="src/JavaScript.svg" alt="js"></li>
+                            <li class="intro-li"><img src="src/React-Dark.svg" alt="react"></li>
+                            <li class="intro-li"><img src="src/Pug-Dark.svg" alt="pug"></li>
+                            <li class="intro-li"><img src="src/Bootstrap.svg" alt="Bootstrap"></li>
                         </ul>
                     </div>
                     <div class="intro round-box">
                         <h2>Back-End</h2>
                         <ul>
-                            <li>Node.js</li>
-                            <li>Go</li>
-                            <li>Python</li>
-                            <li>SpringBoot</li>
-                            <li>MySQL</li>
+                            <li class="intro-li"><img src="src/NodeJS-Dark.svg" alt="nodejs"></li>
+                            <li class="intro-li"><img src="src/ExpressJS-Dark.svg" alt="ExpressJS"></li>
+                            <li class="intro-li"><img src="src/Babel.svg" alt="Babel"></li>
+                            <li class="intro-li"><img src="src/GoLang.svg" alt="Go"></li>
+                            <li class="intro-li"><img src="src/Python-Dark.svg" alt="python"></li>
+                            <li class="intro-li"><img src="src/Java-Dark.svg" alt="Java"></li>
+                            <li class="intro-li"><img src="src/MySQL-Dark.svg" alt="MySQL"></li>
+                            <li class="intro-li"><img src="src/Electron.svg" alt="Electron"></li>
                         </ul>
                     </div>
                     <div class="intro round-box">
                         <h2>ETC</h2>
                         <ul>
-                            <li>Git</li>
-                            <li>AWS EB</li>
-                            <li>Kubernetes</li>
-                            <li>Drum</li>
-                            <li>Guitar</li>
+                            <li class="intro-li"><img src="src/Git.svg" alt="Git"></li>
+                            <li class="intro-li"><img src="src/githubicon.png" alt="Github"></li>
+                            <li class="intro-li"><img src="src/AWS-Dark.svg" alt="AWS"></li>
+                            <li class="intro-li"><img src="src/Kubernetes.svg" alt="Kubernetes"></li>
+                            <li class="intro-li"><img src="src/VSCode-Dark.svg" alt="VSCode"></li>
+                            <li class="intro-li"><img src="src/Markdown-Dark.svg" alt="md"></li>
                         </ul>
                     </div>
                 </div>

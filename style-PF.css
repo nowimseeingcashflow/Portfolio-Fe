@@ -1,10 +1,15 @@
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
-  padding : 15px;
+  padding: 15px;
 }
 
 .main {
@@ -12,10 +17,29 @@
   width: 75%;
   margin: auto;
 }
+
 .menu,
-.logo,
-.search {
+.logo {
   float: left;
+}
+
+.gnb-menu {
+  display: none;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search {
+  float: right;
+  margin-right: 25px;
+}
+
+.search-form {
+  display: none;
 }
 
 .round-box {
@@ -23,16 +47,37 @@
   border-radius: 10px;
   border-color: rgba(169, 169, 169, 0.216);
   border-style: solid;
-  padding : 15px;
+  padding: 15px;
 }
 
-.intro-wrap{
+.intro-wrap {
   box-sizing: border-box;
   display: flex;
 }
 
-.intro{
+.intro {
   flex: 1;
-  margin : 0.75%;
+  margin: 0.75%;
   box-sizing: border-box;
+}
+
+.intro > h2 {
+  text-align: center;
+}
+
+.intro-li:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.intro>ul{
+  margin : 0 auto;
+}
+
+.intro-li > img {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
 }
