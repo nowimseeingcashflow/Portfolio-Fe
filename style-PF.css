@@ -57,13 +57,20 @@ ul {
   text-align: center;
   border-bottom: 0.25px solid rgba(0, 0, 0, 0.5);
   height: 50px;
-  line-height: 50px;
 }
 
 .menu-box:hover{
   background-color: aqua;
 }
-
+.menu-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
 .logo {
   position: absolute;
   left: 50%;
