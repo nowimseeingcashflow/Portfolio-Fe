@@ -7,6 +7,11 @@ ul {
 body{
   background-color: rgb(103, 103, 103);
 }
+
+h1, h2, h4{
+  text-align: center;
+
+}
 .header {
   position: fixed;
   top: 0;
@@ -65,6 +70,7 @@ body{
 
 .menu-top{
   border-bottom: 1px solid #ccc;
+  font-weight: bold;
 }
 
 .menu-box a {
@@ -109,9 +115,11 @@ body{
   margin: 0.75%;
   box-sizing: border-box;
 }
-
-.intro > h2 {
-  text-align: center;
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 .intro-li:hover {
