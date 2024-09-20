@@ -4,13 +4,17 @@ ul {
   padding-left: 20px;
 }
 
+body{
+  background-color: rgb(103, 103, 103);
+}
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
-  padding: 15px;
+  padding: 15px 15px 0px;
+  background-color: rgb(255, 255, 255);
 }
 
 .main {
@@ -30,8 +34,6 @@ ul {
 }
 .gnb-menu {
   /* display: none; */
-  border-right:0.25px solid rgba(0, 0, 0, 0.5);
-  margin-right: 30px;
 }
 
 .gnb-menu > ul{
@@ -40,28 +42,31 @@ ul {
   padding-left : 0; /* 얘는 padding-left 없는 게 예쁜 듯 */
 }
 
-.gnb-top{
+.gnb-column{
   float: left;
   flex: 1;
+  margin-right: 30px;
   box-sizing: border-box;
   padding: 0;
-  border-top: 0.25px solid rgba(0, 0, 0, 0.5);
-  border-left: 0.25px solid rgba(0, 0, 0, 0.5);
 }
 
-.gnb-top > ul{
+.gnb-column > ul{
   padding-left : 0; /* 얘는 padding-left 없는 게 예쁜 듯 */
 
 }
 .menu-box {
   text-align: center;
-  border-bottom: 0.25px solid rgba(0, 0, 0, 0.5);
   height: 50px;
 }
 
 .menu-box:hover{
-  background-color: aqua;
+  background-color: #ccc;
 }
+
+.menu-top{
+  border-bottom: 1px solid #ccc;
+}
+
 .menu-box a {
   display: flex;
   align-items: center;
@@ -79,7 +84,7 @@ ul {
 
 .search {
   position: absolute;
-  right: 30px;
+  right: 40px;
 }
 
 .search-form {
