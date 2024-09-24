@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GongGothicMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 ul {
   /* 점 없애고 padding-left 있던 거 치우기 */
   list-style-type: none;
@@ -5,6 +18,7 @@ ul {
 }
 
 body{
+  font-family: 'GongGothicMedium';
   background-color: rgb(103, 103, 103);
 }
 
@@ -13,18 +27,21 @@ h1, h2, h4{
 
 }
 .header {
+  /* display: none; */
+  font-family: 'GmarketSansMedium';
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
-  padding: 15px 15px 0px;
+  padding: 15px 15px 10px;
   background-color: rgba(255, 255, 255, 0.843);
+  margin-bottom: 16px;
 }
 
 .main {
   position: relative;
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
 
@@ -38,13 +55,14 @@ h1, h2, h4{
   width: 100%;
 }
 .gnb-menu {
-  /* display: none; */
+  display: none;
 }
 
 .gnb-menu > ul{
   display: flex;
   overflow: auto;
   padding-left : 0; /* 얘는 padding-left 없는 게 예쁜 듯 */
+  margin-bottom: 0px;
 }
 
 .gnb-column{
@@ -137,4 +155,23 @@ h1, h2, h4{
   height: 50px;
   width: 50px;
   margin: 5px;
+}
+.swiper {
+  width: 100% !important;
+  height: 600px !important;
+}
+
+.swiper-slide > a {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  margin-top: 15px;
+}
+
+.first-project{
+  margin-top: 0;
 }

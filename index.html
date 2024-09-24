@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of KJM</title>
     <link rel="stylesheet" href="style-PF.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -23,18 +29,18 @@
                     </li>
                     <li class="gnb-column">
                         <ul>
-                            <li class="menu-box menu-top"><a href="#">2</a></li>
-                            <li class="menu-box"><a href="/">2-1</a></li>
-                            <li class="menu-box"><a href="/">2-2</a></li>
-                            <li class="menu-box"><a href="/">2-3</a></li>
+                            <li class="menu-box menu-top"><a href="#">개발</a></li>
+                            <li class="menu-box"><a href="/">공부</a></li>
+                            <li class="menu-box"><a href="/">프로젝트</a></li>
+                            <li class="menu-box"><a href="/">과제</a></li>
+                            <li class="menu-box"><a href="/">ETC</a></li>
                         </ul>
                     </li>
                     <li class="gnb-column">
                         <ul>
-                            <li class="menu-box menu-top"><a href="#">3</a></li>
-                            <li class="menu-box"><a href="/">3-1</a></li>
-                            <li class="menu-box"><a href="/">3-2</a></li>
-                            <li class="menu-box"><a href="/">3-3</a></li>
+                            <li class="menu-box menu-top"><a href="#">사진첩</a></li>
+                            <li class="menu-box"><a href="/">옛날 사진</a></li>
+                            <li class="menu-box"><a href="/">최근 사진</a></li>
                         </ul>
                     </li>
                     <li class="gnb-column">
@@ -62,17 +68,19 @@
     <main class="main">
         <section class="swiper-section">
             <div class="swiper">
-                <ul class="swiper-sliders">
-                    <li class="swiper-slide"><a href="/"><img src="src/happy-happy-happy-cat.gif" alt="해피해피"></a></li>
-                    <li class="swiper-slide"><a href="/"><img src="src/happy-happy-happy-cat.gif" alt="해피해피"></a></li>
-                    <li class="swiper-slide"><a href="/"><img src="src/happy-happy-happy-cat.gif" alt="해피해피"></a></li>
-                    <li class="swiper-slide"><a href="/"><img src="src/happy-happy-happy-cat.gif" alt="해피해피"></a></li>
-                    <li class="swiper-slide"><a href="/"><img src="src/happy-happy-happy-cat.gif" alt="해피해피"></a></li>
-                    <!-- <li class="swiper-slide"><a href="/"></a></li>
-                    <li class="swiper-slide"><a href="/"></a></li>
-                    <li class="swiper-slide"><a href="/"></a></li>
-                    <li class="swiper-slide"><a href="/"></a></li> -->
-                </ul>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="/"><img src="src/" alt="해피해피"></a></div>
+                    <div class="swiper-slide"><a href="/"><img src="src/" alt="해피해피1"></a></div>
+                    <div class="swiper-slide"><a href="/"><img src="src/" alt="해피해피2"></a></div>
+                    <div class="swiper-slide"><a href="/"><img src="src/" alt="해피해피3"></a></div>
+                    <div class="swiper-slide"><a href="/"><img src="src/" alt="해피해피4"></a></div>
+                    
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </section>
         <section class="introduce-section">
@@ -125,10 +133,53 @@
         <section class="project-section">
             <h1>프로젝트</h1>
             <div class="round-box">
-                <div class="project"></div>
-                <div class="project"></div>
+                <div class="project round-box first-project">
+                    <h2>포트폴리오 페이지</h2>
+                    <h4>2024.09 ~</h4>
+                </div>
+                <div class="project round-box">
+                    <h2>Coming Soon...</h2>
+                    <h4>2024.10 ~</h4>
+                </div>
             </div>
         </section>
     </main>
 </body>
+<script>
+    const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidePerView: 1,
+    rewind: true,
+    effect: 'flip',
+
+    pagination: '.swiper-pagination',
+    paginationClickable: '.swiper-pagination',  
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    // on:{
+    //     slideChangeTransitionEnd: customNext
+    //   },
+    speed: 500,
+});
+// function customNext() { 왜 안 되는거야
+//     setTimeout(()=>{
+//     console.log("Executed after 1 second");
+//     const swiperWrapper = document.querySelector('.swiper-wrapper');
+//     const xAxis = document.querySelector('.swiper-slide').clientWidth;
+//     var transformHowmuch = 'translate3d(0, 0, 0)';
+//     console.log(transformHowmuch);
+
+//     swiperWrapper.style.transform = transformHowmuch;
+//     }, 501);
+//}
+
+</script>
 </html>
